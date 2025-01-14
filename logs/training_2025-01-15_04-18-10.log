@@ -1,0 +1,6 @@
+2025-01-15 04:18:10,172 - root - INFO - Training process started
+2025-01-15 04:18:10,899 - root - INFO - Data loaded from data/match_maker.xlsx, shape: (4269, 6)
+2025-01-15 04:18:11,341 - root - INFO - Train accuracy: 0.79
+2025-01-15 04:18:11,341 - root - INFO - Test accuracy: 0.78
+2025-01-15 04:18:11,343 - root - INFO - Model saved successfully to '/Users/jengjava/Desktop/my-new-repo/ML-Ops/Assignment-1/src/../models/final_logistic_regression_model.joblib'
+2025-01-15 04:18:11,343 - root - INFO - Training process finished
