@@ -3,10 +3,15 @@ Main module for running the ML pipeline.
 """
 
 import sys
+import os
 import logging
-from src.models import train_model
-from src.data_loading import load_data
-from src.utils.save_utils import save_model
+
+# Add the src directory to the Python path
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
+
+from models import train_model
+from data_loading import load_data
+from utils.save_utils import save_model
 
 
 def main():
