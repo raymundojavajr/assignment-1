@@ -1,6 +1,6 @@
 from dagster import repository
-from src.dagster_project.pipeline import ml_pipeline, model_evaluation_pipeline
+from dagster_project.assets import raw_data, trained_model, saved_model
 
 @repository
 def my_repository():
-    return [ml_pipeline, model_evaluation_pipeline]
+    return [raw_data, trained_model, saved_model]

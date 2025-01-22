@@ -22,6 +22,7 @@ def train_model_op(data):
 def save_model_op(model):
     file_path = "models/model.pkl"
     save_model(model, file_path)
+    return file_path
 
 
 @op
