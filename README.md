@@ -1,17 +1,56 @@
-<<<<<<< HEAD
-# assignment-1
-ML_Ops
-=======
-# ML Project: Testing the Organization of MLOps
+# **ML Project: Testing the Organization of MLOps**
 
-This repository contains the implementation of a machine learning project. The goal is to demonstrate how to structure and organize an ML project following MLOps practices. This includes proper separation of concerns, usage of logging, saving and loading models, and preparing a clear project structure.
+This repository contains the implementation of a machine learning project as part of **Assignment 1 - MLOps**. The goal is to demonstrate best practices in structuring and organizing an ML project following MLOps principles. This includes proper separation of concerns, logging, saving/loading models, and maintaining a clear project structure.
 
-## Project Overview
+## **Project Overview**
 
-This project uses a logistic regression model to predict outcomes based on a dataset, specifically focusing on data classification. It covers various aspects of MLOps, including:
+This project focuses on **logistic regression-based classification**, covering key MLOps aspects such as:
 
-- **Model Training**: Training a logistic regression model.
-- **Model Saving and Loading**: Using joblib to save and load the model.
-- **Logging**: Capturing the training process using logs for better traceability.
-- **Directory Structure**: Organizing the code and files into appropriate directories for better maintainability and scalability.
->>>>>>> f523325 (Initial commit with README and model code)
+- **Model Training**: Implementing logistic regression for data classification.
+- **Model Saving & Loading**: Using `joblib` to persist models for later use.
+- **Logging**: Capturing model training logs for better traceability.
+- **Project Structure**: Ensuring modularity, maintainability, and scalability.
+
+## **Repository Structure**
+```
+├── data/                   # Dataset storage (ignored in Git)
+├── models/                 # Trained model storage (ignored in Git)
+├── notebooks/              # Jupyter notebooks for EDA & experiments
+├── src/                    # Source code for model training & utilities
+│   ├── train.py            # Training script
+│   ├── model.py            # Model implementation
+│   ├── utils.py            # Helper functions
+├── .gitignore              # Ignoring unnecessary files (cache, logs, models, etc.)
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
+```
+
+## **Setup & Installation**
+To set up the project, follow these steps:
+
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/raymundojavajr/assignment-1.git
+   cd assignment-1
+   ```
+
+2. **Create a virtual environment**:
+   ```sh
+   python -m venv .venv
+   source .venv/bin/activate  # On macOS/Linux
+   .venv\Scripts\activate     # On Windows
+   ```
+
+3. **Install dependencies**:
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+## **Usage**
+To train the model:
+```sh
+python src/train.py
+```
+
+## **Logging & Debugging**
+All logs are stored in `logs/`, and training runs are tracked to monitor model performance.
