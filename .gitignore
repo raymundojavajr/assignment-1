@@ -1,4 +1,59 @@
+# Virtual environments
 .venv/
+env/
 environment/
-new/
 virtual/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and debug files
+logs/
+*.log
+*.out
+*.err
+
+# Data files (ML & datasets)
+data/
+datasets/
+*.csv
+*.tsv
+*.json
+*.xml
+*.h5
+*.parquet
+*.db
+*.sqlite
+
+# Machine Learning model artifacts
+models/
+*.h5
+*.onnx
+*.tflite
+*.pkl
+*.joblib
+*.ckpt
+*.pb
+*.bin
+
+# Compiled Python files
+build/
+dist/
+*.egg-info/
+*.so
+*.dll
+*.dylib
+
+# VSCode and PyCharm settings
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
