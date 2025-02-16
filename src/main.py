@@ -12,29 +12,30 @@ from data_loading import load_data
 from utils.save_utils import save_model
 
 # Add the src directory to the Python path BEFORE importing modules from it
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", "src"))
+
 
 def main():
     """Main function to run the ML pipeline."""
     # Generate a dynamic log filename using the current date
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
     log_filename = os.path.join("logs", f"training_{current_date}.log")
-    
+
     # Configure logging to file
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s - %(levelname)s - %(message)s",
         filename=log_filename,
-        filemode="a"  # Append mode
+        filemode="a",  # Append mode
     )
-    
+
     # Add a stream handler to output logs to the terminal as well
     console = logging.StreamHandler(sys.stdout)
     console.setLevel(logging.INFO)
     console_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
     console.setFormatter(console_formatter)
-    logging.getLogger('').addHandler(console)
-    
+    logging.getLogger("").addHandler(console)
+
     logging.info("Starting the ML pipeline")
 
     try:
