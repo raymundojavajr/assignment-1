@@ -1,2 +1,0 @@
-load_from:
-  - python_file: src/dagster_project/repository.py
