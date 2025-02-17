@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/799660235965201500/7f234eece45e4fd18768241760655e62/artifacts
+end_time: 1739730874186
+entry_point_name: ''
+experiment_id: '799660235965201500'
+lifecycle_stage: active
+run_id: 7f234eece45e4fd18768241760655e62
+run_name: honorable-crab-90
+run_uuid: 7f234eece45e4fd18768241760655e62
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739730874155
+status: 4
+tags: []
+user_id: Jeng
